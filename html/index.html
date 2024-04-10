@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Shanaya Elice</title>
+  <style>.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(222, 201, 220);
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 1000;
+    box-shadow: 0 2px 10px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../html/index.html">Startseite</a></li>
+        <li><a href="../html/lebenslauf.html">Über mich</a></li>
+        <li><a href="../html/kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    
+    <section>
+      <h1>Willkommen auf meiner Website</h1>
+      <img src="../pics/ich_dreieck.gif" id="mein_drychi" alt="mein_drychi" />
+      
+    </section>
+  </main>
+  <footer>
+    <p><a href=impressum.html>impressum</a> | 📨 shanaya.elice@icloud.com | 📲 015738374887</p>
+  </footer>
+  <div id="popup" class="popup">
+    <p>Diese Website ist ein Informatik Schulprojekt. Und soll als Portfolio dienen. 
+    </p>
+    <button onclick="closePopup()">Ok</button>
+  </div>
+
+  <!-- hier bisschen JavaScript -->
+  <script>
+   
+    function openPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    
+    window.onload = function() {
+      openPopup();
+    };
+  </script>
+</body>
+</html>
+
+
+

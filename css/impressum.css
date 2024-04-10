@@ -1,0 +1,62 @@
+
+body {
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Titel */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Unterüberschriften */
+h3 {
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: rgb(225, 150, 233);
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Absätze */
+p {
+    margin-bottom: 15px;
+}
+
+/* Haftungsausschlusserklärungen */
+h4 {
+    font-size: 1em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Mobile Ansicht */
+@media (max-width: 600px) {
+    article {
+        padding: 10px;
+    }
+}
+
+form{
+    display: flex;
+}
